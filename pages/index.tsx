@@ -19,7 +19,8 @@ const Home = () => {
     }
   ]
 
-  const submitContact = () => {
+  const submitContact = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
   }
 
@@ -38,7 +39,7 @@ const Home = () => {
         >
           <span className="absolute top-0 opacity-75 bg-black w-full h-full" />
         </div>
-        <div className="relative container mx-auto text-center">
+        <div className="relative container text-center mx-4 ">
           <h1 className="text-5xl leading-normal mb-5">Random Landing Page</h1>
           <p className="text-gray-200 max-w-2xl mx-auto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia inventore neque fugiat tempore voluptatum! Aliquid quod laborum corporis quibusdam blanditiis, harum, commodi mollitia libero, fugit nemo inventore ducimus voluptates facere!
@@ -53,9 +54,9 @@ const Home = () => {
           <p className="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quae?</p>
         </article>
 
-        <article className="flex container mx-auto">
+        <article className="flex container mx-auto sm:flex-col">
           {introCards.map((item) => (
-            <div className="w-1/3 p-2">
+            <div className="w-1/3 p-2 sm:w-full sm:mb-6">
               <img
                 src={item.imageUrl} alt=""
                 className="mb-3 w-full object-cover shadow-lg rounded"
@@ -68,17 +69,17 @@ const Home = () => {
       </section>
 
       {/* SECTION: Left - Right */}
-      <section className="flex container mx-auto py-64">
-        <article className="w-1/2">
+      <section className="flex container mx-auto py-64 sm:flex-col sm:items-center">
+        <article className="w-1/2 sm:w-full sm:mb-4 flex justify-center">
           <img
             src="https://images.unsplash.com/photo-1598295240767-82a050c15147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" 
             alt=""
-            className="rounded shadow-md object-cover mx-auto"
-            style={{width: '300px', height:"500px"}}
+            className="w-full rounded shadow-md object-cover sm:px-4"
+            style={{maxWidth: '300px', height:"500px"}}
           />
         </article>
 
-        <article className="w-1/2 flex flex-col justify-center" style={{maxWidth:'400px'}}>
+        <article className="w-1/2 flex flex-col justify-center mx-4 sm:w-full sm:px-4" style={{maxWidth:'400px'}}>
             <p className="text-sm text-blue-500">Left</p>
             <h3 className="text-3xl mb-2">Left - Right Title</h3>
             <p className="teext-gray-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod optio minima ullam ipsam dolores quibusdam autem repudiandae voluptates rerum, quo tenetur facere doloremque saepe blanditiis! Quidem earum laboriosam in error?</p>
@@ -133,7 +134,7 @@ const Home = () => {
 
       {/* SECTION: Footer */}
       <section className="bg-gray-200 text-gray-700 pt-12">
-        <div className="container mx-auto flex justify-between" style={{maxWidth: '960px'}}>
+        <div className="container mx-auto flex justify-between sm:flex-col px-4" style={{maxWidth: '960px'}}>
           <div className="">
             <h3 className="text-3xl">Footer</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, quidem!</p>
@@ -144,7 +145,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex ">
+          <div className="flex">
             <div className="mr-32">
               <label className="block uppercase font-bold text-gray-600">link1</label>
               <ul className="text-black italic">
@@ -166,7 +167,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-sm mt-12 pb-2">Copyright © 2020 ChaCcy Random Landing Page.</p>
+        <p className="text-center text-sm mt-12 pb-4 px-4">Copyright © 2020 ChaCcy Random Landing Page.</p>
       </section>
     </main>
   )
