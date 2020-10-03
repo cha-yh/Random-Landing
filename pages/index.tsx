@@ -24,7 +24,7 @@ const Home = () => {
 
   }
 
-  const cnInput = "w-full p-2 shadow focus:shadow-outline focus:outline-none rounded placeholder-gray-600";
+  const cnInput = "w-full p-2 shadow focus:shadow-outline focus:outline-none rounded placeholder-gray-600 text-gray-800";
   
   return (
 
