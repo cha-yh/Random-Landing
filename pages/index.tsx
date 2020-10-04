@@ -30,7 +30,7 @@ const Home = () => {
 
     <main className="mx-auto bg-black text-white">
       {/* SECTION: Hero */}
-      <section className="h-screen flex items-center justify-center">
+      <section className="h-screen flex items-center justify-center" >
         <div
           className="w-full h-full absolute top-0 bg-cover bg-center"
           style={{
@@ -40,8 +40,8 @@ const Home = () => {
           <span className="absolute top-0 opacity-75 bg-black w-full h-full" />
         </div>
         <div className="relative container text-center mx-4 ">
-          <h1 className="text-5xl leading-normal mb-5">Random Landing Page</h1>
-          <p className="text-gray-200 max-w-2xl mx-auto">
+          <h1 className="text-5xl leading-normal mb-5" data-aos="fade-in">Random Landing Page</h1>
+          <p className="text-gray-200 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay={300}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia inventore neque fugiat tempore voluptatum! Aliquid quod laborum corporis quibusdam blanditiis, harum, commodi mollitia libero, fugit nemo inventore ducimus voluptates facere!
           </p>
         </div>
@@ -49,14 +49,14 @@ const Home = () => {
   
       {/* SECTION: Intro */}
       <section className="bg-white text-black py-16">
-        <article className="mb-5 container mx-auto text-center">
+        <article className="mb-5 container mx-auto text-center" data-aos="fade-in">
           <h3 className="text-3xl mb-2">Cards section</h3>
           <p className="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quae?</p>
         </article>
 
         <article className="flex container mx-auto sm:flex-col">
-          {introCards.map((item) => (
-            <div className="w-1/3 p-2 sm:w-full sm:mb-6">
+          {introCards.map((item, index) => (
+            <div className="w-1/3 p-2 sm:w-full sm:mb-6" data-aos="fade-up" data-aos-delay={200*index}>
               <img
                 src={item.imageUrl} alt=""
                 className="mb-3 w-full object-cover shadow-lg rounded"
@@ -70,7 +70,7 @@ const Home = () => {
 
       {/* SECTION: Left - Right */}
       <section className="flex container mx-auto py-64 sm:flex-col sm:items-center">
-        <article className="w-1/2 sm:w-full sm:mb-4 flex justify-center">
+        <article className="w-1/2 sm:w-full sm:mb-4 flex justify-center" data-aos="fade-left">
           <img
             src="https://images.unsplash.com/photo-1598295240767-82a050c15147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" 
             alt=""
@@ -79,7 +79,7 @@ const Home = () => {
           />
         </article>
 
-        <article className="w-1/2 flex flex-col justify-center mx-4 sm:w-full sm:px-4" style={{maxWidth:'400px'}}>
+        <article className="w-1/2 flex flex-col justify-center mx-4 sm:w-full sm:px-4" style={{maxWidth:'400px'}} data-aos="fade-right">
             <p className="text-sm text-blue-500">Left</p>
             <h3 className="text-3xl mb-2">Left - Right Title</h3>
             <p className="teext-gray-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod optio minima ullam ipsam dolores quibusdam autem repudiandae voluptates rerum, quo tenetur facere doloremque saepe blanditiis! Quidem earum laboriosam in error?</p>
@@ -90,6 +90,7 @@ const Home = () => {
       <section className="bg-blue-600 py-40 relative">
         <div className="container mx-auto" style={{maxWidth: '500px'}}>
           <div
+            data-aos="zoom-out"
             className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
             style={{
               backgroundImage: "url(https://images.unsplash.com/photo-1546931665-73db142e716f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"
@@ -98,7 +99,7 @@ const Home = () => {
             <span className="absolute top-0 left-0 w-full h-full bg-black opacity-25" />
           </div>
 
-          <div className="relative mx-4">
+          <div className="relative mx-4" data-aos="fade-in" data-aos-delay={300}>
             <h3 className="text-3xl">Contact Us</h3>
             <p className="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam illum voluptates dignissimos aspernatur sit maxime vitae nesciunt ipsa consequatur?</p>
 
