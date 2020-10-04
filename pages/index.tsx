@@ -56,7 +56,7 @@ const Home = () => {
 
         <article className="flex container mx-auto sm:flex-col">
           {introCards.map((item, index) => (
-            <div className="w-1/3 p-2 sm:w-full sm:mb-6" data-aos="fade-up" data-aos-delay={200*index}>
+            <div className="w-1/3 p-2 sm:w-full sm:mb-6" data-aos="fade-up" data-aos-delay={200*index} key={item.text1}>
               <img
                 src={item.imageUrl} alt=""
                 className="mb-3 w-full object-cover shadow-lg rounded"
