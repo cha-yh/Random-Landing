@@ -3,17 +3,17 @@ import React from 'react';
 const Home = () => {
   const introCards = [
     {
-      imageUrl: "https://images.unsplash.com/photo-1601690374587-7f943d2a0637?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
+      imageUrl: "https://picsum.photos/400/500?random=1",
       text1: "Image1",
       text2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, expedita."
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1579769934988-6e1a8fb8fdb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+      imageUrl: "https://picsum.photos/400/500?random=2",
       text1: "Image2",
       text2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, soluta."
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1595378700670-e3ebd7601252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=962&q=80",
+      imageUrl: "https://picsum.photos/400/500?random=3",
       text1: "Image3",
       text2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti."
     }
@@ -34,7 +34,7 @@ const Home = () => {
         <div
           className="w-full h-full absolute top-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url(https://images.unsplash.com/photo-1579745831743-2bbafb0ab415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)"
+            backgroundImage: "url(https://source.unsplash.com/random)"
           }}
         >
           <span className="absolute top-0 opacity-75 bg-black w-full h-full" />
@@ -72,7 +72,7 @@ const Home = () => {
       <section className="flex container mx-auto py-64 sm:flex-col sm:items-center">
         <article className="w-1/2 sm:w-full sm:mb-4 flex justify-center" data-aos="fade-left">
           <img
-            src="https://images.unsplash.com/photo-1598295240767-82a050c15147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" 
+            src="https://picsum.photos/300/500?random=4" 
             alt=""
             className="w-full rounded shadow-md object-cover sm:px-4"
             style={{maxWidth: '300px', height:"500px"}}
