@@ -29,24 +29,40 @@ const Home = () => {
   return (
 
     <main className="mx-auto bg-black text-white">
-      {/* SECTION: Hero */}
-      <section className="h-screen flex items-center justify-center" >
-        <div
-          className="w-full h-full absolute top-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url(https://source.unsplash.com/random)"
-          }}
-        >
-          <span className="absolute top-0 opacity-75 bg-black w-full h-full" />
-        </div>
-        <div className="relative container text-center mx-4 ">
+      {/* SECTION: Video hero */}
+      <section className="h-screen flex items-center justify-center">
+        <video className="w-full overflow-hidden " preload="auto" autoPlay loop muted poster="" data-bg-video="true" data-poster-thumb="https://thumbs.gfycat.com/BriskCompetentAmericanpainthorse-poster.jpg" webkit-playsinline="1" playsInline>
+          <source className="mp4 display" src="https://thumbs.gfycat.com/SilentHugeAmazondolphin-mobile.mp4" type="video/mp4" />
+          <source className="webm" src="https://thumbs.gfycat.com/SilentHugeAmazondolphin-mobile.webm" type="video/webm" />
+        </video>
+        <div className="absolute container text-center mx-4 ">
           <h1 className="text-5xl leading-normal mb-5" data-aos="fade-in">Random Landing Page</h1>
           <p className="text-gray-200 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay={300}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia inventore neque fugiat tempore voluptatum! Aliquid quod laborum corporis quibusdam blanditiis, harum, commodi mollitia libero, fugit nemo inventore ducimus voluptates facere!
           </p>
         </div>
       </section>
-  
+
+      {/* SECTION: Hero */}
+      <section className="relative flex items-center justify-center" >
+        <div
+          className="w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: "url(https://source.unsplash.com/random)",
+            height: "30rem"
+          }}
+        >
+          <span className="absolute top-0 opacity-75 bg-black w-full h-full" />
+        </div>
+        <div className="absolute container text-center mx-4 ">
+          <h1 className="text-5xl leading-normal mb-5" data-aos="fade-in">Random Image with Text</h1>
+          <p className="text-gray-200 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay={300}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia inventore neque fugiat tempore voluptatum! Aliquid quod laborum corporis quibusdam blanditiis, harum, commodi mollitia libero, fugit nemo inventore ducimus voluptates facere!
+          </p>
+        </div>
+      </section>
+
+      
       {/* SECTION: Intro */}
       <section className="bg-white text-black py-16">
         <article className="mb-5 container mx-auto text-center" data-aos="fade-in">
@@ -90,7 +106,7 @@ const Home = () => {
       <section className="bg-blue-600 py-40 relative">
         <div className="container mx-auto" style={{maxWidth: '500px'}}>
           <div
-            data-aos="zoom-out"
+            data-aos="fade-in"
             className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
             style={{
               backgroundImage: "url(https://images.unsplash.com/photo-1546931665-73db142e716f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"
